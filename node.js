@@ -25,14 +25,20 @@ http.get(options,function (res) {
            var title=$(this).find('.statitlediv').find('.staname').text();
            if(title=="所有监测站列表"){
                $(this).find('tbody').find('tr').each(function(i,ele){
-                   var name=$(this).find('td').eq(1).find('a').text();
-                   console.log(name)
+                   var name=$(this).find('td').eq(0).find('a').text();
+                   var name1=$(this).find('td').eq(1).text();
 				   if(name=='美国大使馆' || name=="农展馆" ||name=="奥体中心"||name=="通州"||name=="天坛")
 				  				 {
-				  	                   console.log(name)
+				                     console.log(name,name1)
 				   	
 				  				   }
 				   	
+				   
+				   
+				   
+				   
+				   
+				  
 					
 				   
                
