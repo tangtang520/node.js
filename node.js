@@ -30,7 +30,7 @@ http.get(options,function (res) {
                    var name2=$(this).find('td').eq(2).text();
 				   if(name=='美国大使馆' || name=="农展馆" ||name=="奥体中心"||name=="通州"||name=="天坛")
 				  				 {
-				                     console.log(name,name1,name2)
+				                     console.log(name,"\n",name1,"\n",name2,"\n");
 				  				   }
 			   })
            }
